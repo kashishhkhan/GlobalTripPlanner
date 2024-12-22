@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the United Kingdom with GlobalTripPlanner. Discover attractions, flight details, and book your trip today.">
+    <meta name="keywords" content="UK travel, United Kingdom attractions, UK flights, book trips to UK">
+    <title>Booking Confirmation - GlobalTripPlanner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: url('assets/background\ img.png') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            text-align: left;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        .content {
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        .confirmation-card {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .confirmation-card h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .confirmation-card p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .back-to-home {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .back-to-home:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="assets/travel the world.png" alt="GlobalTripPlanner Logo">
+            <h1>GlobalTripPlanner</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- Confirmation Card -->
+        <div class="confirmation-card">
+            <h2>BOOKED!</h2>
+            <p>Have a safe journey! Your flight and trip to the United Kingdom are now confirmed.</p>
+            <a href="index.html" class="back-to-home">Back to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GlobalTripPlanner | All rights reserved | Made By Kashish Khan</p>
+    </footer>
+</body>
+</html>

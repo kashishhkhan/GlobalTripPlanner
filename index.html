@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GlobalTripPlanner helps you plan your dream trips around the world. Discover top destinations, book hotels, explore amazing tours, and more.">
+    <meta name="keywords" content="global trips, travel planning, world tours, trip booking, travel destinations">
+    <title>GlobalTripPlanner - Your Gateway to Dream Travel Destinations</title>
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: url('assets/background\ img.png') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+        }
+
+        header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            text-align: left;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        section h2 {
+            color: white;
+            font-size: 2rem;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header img {
+                width: 35px;
+                height: 35px;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<!-- Main Page -->
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <img src="assets/travel the world.png" alt="GlobalTripPlanner Logo">
+            <h1>GlobalTripPlanner</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Explore Our Top Destinations</h2>
+    </section>
+
+    <!-- CARDS  -->
+    <div class="cards-container">
+        <div class="card">
+            <a href="uk.html" style="text-decoration: none; color: inherit;">
+                <img src="assets/UK.png" alt="A beautiful view of the United Kingdom landscape">
+                <h3>Explore United Kingdom</h3>
+            </a>            
+        </div>
+        <div class="card">
+            <a href="us.html" style="text-decoration: none; color: inherit;">
+                <img src="assets/US.png" alt="A beautiful view of the United States landscape">
+                <h3>Explore United States</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="dubai.html" style="text-decoration: none; color: inherit;">
+                <img src="assets/dubai.png" alt="A beautiful view of the landscape Dubai">
+                <h3>Explore Dubai</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="turkey.html" style="text-decoration: none; color: inherit;">
+            <img src="assets/turkey.1.png" alt="A beautiful view of the landscape Turkey">
+            <h3>Explore Turkey</h3>
+        </a>
+        </div>
+        <div class="card">
+            <a href="paris.html" style="text-decoration: none; color: inherit;">
+            <img src="assets/paris_1.png" alt="A beautiful view of the landscape Paris">
+            <h3>Explore Paris</h3>
+            </a>
+        </div>
+        <div class="card">
+            <a href="maldives.html" style="text-decoration: none; color: inherit;">
+            <img src="assets/maldives.png" alt="A beautiful view of the landscape Maldives">
+            <h3>Explore Maldives</h3>
+        </a>
+        </div>
+        <div class="card">
+            <a href="disneyland.html" style="text-decoration: none; color: inherit;">
+            <img src="assets/disneyland (3).png" alt="A beautiful view of the landscape Disneyland">
+            <h3>Explore Disneyland</h3>
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 GlobalTripPlanner | All rights reserved | Made By Kashish Khan</p>
+    </footer>
+</body>
+
+</html>
